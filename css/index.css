@@ -1,0 +1,154 @@
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+.jumu {
+    position: relative;
+    padding: 60px 0 80px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    background: linear-gradient(45deg, #020031 0, #6d3353 100%);
+    color: #fff;
+}
+.jumu .container {
+    position: relative;
+    z-index: 2;
+}
+.jumu::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/bg.png) repeat center center;
+    opacity: .4;
+}
+.jumu h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+.jumu h2 {
+    font-size: 18px;
+}
+.jumu p:nth-of-type(1) {
+    margin-top: 30px
+}
+.jumu .old-version a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.jumu .old-version a:hover {
+    text-decoration: underline;
+    color: #fff;
+    transition: all .2s;
+}
+
+.links {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+    
+}
+.links ul {
+    margin: 0;
+    padding: 0 auto;
+}
+.links ul li {
+    display: inline-block;
+}
+.links a {
+    color: #bbb;
+}
+.links li.weibo:hover a{
+    color: rgb(236, 65, 65);
+}
+.links li.weibo::before {
+    content: "|";
+    padding: 0 10px;
+    color: #ccc;
+}
+/* .links i.shequ::before {
+    content: "\f086";
+}
+.links i.weibo::before {
+    content: "\f18a"；
+} */
+
+.projects {
+    text-align: center;
+}
+.projects .page-header {
+    width: 60%;
+    margin: 60px auto 40px;
+}
+.projects .thumbnail {
+    max-width: 310px;
+    margin: 0 auto 30px;
+}
+.projects .thumbnail .caption {
+    height: 200px;
+    overflow-y: hidden;
+    color: #555;
+}
+
+.footer .about ul {
+    margin: 0;
+    padding: 0;
+}
+.footer .about h4 {
+    font-size: 16px;
+}
+.footer a {
+    color: #777;
+}
+
+.scroll {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;
+    background: #777;
+}
+.scroll:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+    .md-hide {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px){
+    .jumu {
+        padding: 90px 0 110px;
+    }
+    .jumu h1 {
+        font-size: 90px;
+    }
+    .jumu h2 {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .jumu h1 {
+        font-size: 100px;
+    }
+}
